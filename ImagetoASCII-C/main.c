@@ -55,7 +55,7 @@ void print_ASCII(Pixel* pixels, int numPixels, int width){
 }
 int main(int argc, char** argv){
 	//the header of ppm files contain information about dimensions and format
-	FILE* file = fopen(argv[1], "r"); //open ppm file
+	FILE* file = fopen(argv[1], "rb"); //open ppm file
 	char type[3]; //type (ex. p3, p6)
 	int width;
 	int height;
